@@ -117,8 +117,16 @@ aside {
     height: 92vh;
 }
 
-aside.flex {
+aside.flex, .spotify_commands {
     flex-direction: column;
+}
+
+.cmd_img img {
+    width: 20%;
+}
+
+.cmd_text {
+    color: white;
 }
 
 .logo {
