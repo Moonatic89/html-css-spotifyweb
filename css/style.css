@@ -23,6 +23,18 @@ body {
 
 /* #endregion */
 
+/* #region Utility */
+
+/* #region Float */
+
+.f-l {
+    float: left;
+}
+
+/* #endregion */
+
+/* #endregion */
+
 /* #region Debug */
 
 .debug header {
@@ -64,29 +76,73 @@ body {
 
 /* #endregion */
 
+/* #region Header */
+
 header {
-    background-color: chocolate;
-    /* width: 84vw; */
+    background-color: #080B12;
     width: calc(100vw - 230px);
     height: 8vh;
+    line-height: 8vh;
     position: absolute;
     top: 0;
     left: 230px;
+    justify-content: flex-end;
+    align-items: center;
 }
 
-/* #region Header */
+.upgrade_btn {
+    margin-right: 15px;
+}
+
+.btn {
+    padding: .5rem 1rem;
+    border: 1px solid white;
+    border-radius: 20px;
+}
+
+a.btn {
+    text-decoration: none;
+    color: white;
+    font-size: .75rem;
+}
 
 /* #endregion */
 
 /* #region Aside */
 
+aside {
+    background-color: black;
+    position: relative;
+    width: 230px;
+    height: 92vh;
+}
+
 /* #endregion */
 
 /* #region Artists */
 
+.artists {
+    background-color: #141922;
+    overflow-y: scroll;
+    width: calc(100vw - 230px);
+    height: 84vh;
+    position: absolute;
+    top: 8vh;
+    left: 230px;
+}
+
 /* #endregion */
 
 /* #region Footer */
+
+footer {
+    background-color: #282828;
+    width: 100vw;
+    height: 8vh;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
 
 /* #endregion */
 
@@ -105,11 +161,10 @@ header {
 /* #region @media */
 
 @media screen and (max-width: 320px) {
-    .debug aside {
+    aside {
         width: 50px;
-        background-color: brown;
     }
-    .debug header, .debug .artists {
+    header, .artists {
         width: calc(100vw - 50px);
         left: 50px;
     }
