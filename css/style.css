@@ -27,36 +27,39 @@ body {
 
 .debug header {
     background-color: chocolate;
-    width: 84vw;
+    /* width: 84vw; */
+    width: calc(100vw - 230px);
     height: 8vh;
     position: absolute;
     top: 0;
-    left: 16vw;
+    left: 230px;
 }
 
 .debug aside {
     background-color: brown;
-    width: 16vw;
+    position: relative;
+    width: 230px;
     height: 100vh;
-}
-
-.debug footer {
-    background-color: cadetblue;
-    width: 100vw;
-    height: 8vh;
-    position: absolute;
-    left: 0;
-    bottom: 0;
+    z-index: 2;
 }
 
 .debug .artists {
     background-color: crimson;
-    position: absolute;
-    width: 84vw;
-    height: 84vh;
-    top: 8vh;
-    left: 16vw;
     overflow-y: scroll;
+    width: calc(100vw - 230px);
+    height: 84vh;
+    position: absolute;
+    top: 8vh;
+    left: 230px;
+}
+
+.debug footer {
+    background-color: cadetblue;
+    width: calc(100vw - 230px);
+    height: 8vh;
+    position: absolute;
+    left: 230px;
+    bottom: 0;
 }
 
 /* #endregion */
