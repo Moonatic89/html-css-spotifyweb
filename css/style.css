@@ -117,6 +117,18 @@ aside {
     height: 92vh;
 }
 
+aside.flex {
+    flex-direction: column;
+}
+
+.logo {
+    width: 80%;
+}
+
+.logo img {
+    width: 100%;
+}
+
 /* #endregion */
 
 /* #region Artists */
