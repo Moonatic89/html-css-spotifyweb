@@ -39,7 +39,7 @@ body {
     background-color: brown;
     position: relative;
     width: 230px;
-    height: 100vh;
+    height: 92vh;
     z-index: 2;
 }
 
@@ -55,15 +55,64 @@ body {
 
 .debug footer {
     background-color: cadetblue;
-    width: calc(100vw - 230px);
+    width: 100vw;
     height: 8vh;
     position: absolute;
-    left: 230px;
+    left: 0;
     bottom: 0;
 }
 
 /* #endregion */
 
+header {
+    background-color: chocolate;
+    /* width: 84vw; */
+    width: calc(100vw - 230px);
+    height: 8vh;
+    position: absolute;
+    top: 0;
+    left: 230px;
+}
+
+/* #region Header */
+
+/* #endregion */
+
+/* #region Aside */
+
+/* #endregion */
+
+/* #region Artists */
+
+/* #endregion */
+
+/* #region Footer */
+
+/* #endregion */
+
 /* #region Prefab */
+
+/* #endregion */
+
+/* #region Prefab */
+
+/* #endregion */
+
+/* #region Prefab */
+
+/* #endregion */
+
+/* #region @media */
+
+@media screen and (max-width: 320px) {
+    .debug aside {
+        width: 50px;
+        background-color: brown;
+    }
+    .debug header, .debug .artists {
+        width: calc(100vw - 50px);
+        left: 50px;
+    }
+}
 
 /* #endregion */
