@@ -1,0 +1,65 @@
+/* #region Essentials */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.flex {
+    display: flex;
+}
+
+body {
+    /* this is temporary */
+    max-width: 1440px;
+}
+
+/* #endregion */
+
+/* #region Debug */
+
+.debug header {
+    background-color: chocolate;
+    width: 84vw;
+    height: 8vh;
+    position: absolute;
+    top: 0;
+    left: 16vw;
+}
+
+.debug aside {
+    background-color: brown;
+    width: 16vw;
+    height: 100vh;
+}
+
+.debug footer {
+    background-color: cadetblue;
+    width: 100vw;
+    height: 8vh;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.debug .artists {
+    background-color: crimson;
+    position: absolute;
+    width: 84vw;
+    height: 84vh;
+    top: 8vh;
+    left: 16vw;
+}
+
+/* #endregion */
+
+/* #region Prefab */
+
+/* #endregion */
