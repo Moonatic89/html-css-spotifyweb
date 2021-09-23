@@ -19,6 +19,8 @@
 body {
     /* this is temporary */
     max-width: 1440px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* #endregion */
@@ -115,10 +117,16 @@ aside {
     position: relative;
     width: 230px;
     height: 92vh;
+    justify-content: space-between;
 }
 
 aside.flex, .spotify_commands {
     flex-direction: column;
+}
+
+.spotify_commands {
+    justify-content: space-around;
+    height: 60%;
 }
 
 .cmd_img img {
