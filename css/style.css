@@ -217,6 +217,17 @@ footer {
     position: absolute;
     left: 0;
     bottom: 0;
+    justify-content: space-between;
+    padding: .75rem;
+}
+
+.song_thumb {
+    width: 10%;
+    justify-content: space-between;
+}
+
+.band_img img {
+    height: 100%;
 }
 
 /* #endregion */
