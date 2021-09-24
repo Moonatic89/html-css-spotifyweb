@@ -202,13 +202,38 @@ dl dd:first-of-type span {
 .artists {
     background-color: #141922;
     overflow-y: scroll;
+    overflow-x: hidden;
     width: calc(100vw - 230px);
     /* i need to figure this out */
     height: 84vh;
     /*  */
     position: absolute;
-    top: 8vh;
+    top: 65px;
     left: 230px;
+}
+
+.track_img {
+    width: 200px;
+    height: 200px;
+    background-color: crimson;
+    margin-bottom: 1rem;
+}
+
+.track_text {
+    flex-direction: column;
+    align-items: center;
+}
+
+.track_text>* {
+    padding: .5rem 0;
+}
+
+.track_text .title {
+    font-weight: bold;
+}
+
+.track_text .subtitle {
+    font-size: .8rem;
 }
 
 /* #endregion */
