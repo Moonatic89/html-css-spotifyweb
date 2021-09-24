@@ -270,16 +270,23 @@ footer a.grey_btn {
     padding: 0 1rem;
 }
 
-.song_timing {
-    height: 20px;
-    width: 100%;
-    background-color: hotpink;
-}
-
 .volumebar {
     background-color: khaki;
     height: 2px;
     width: 150px;
+}
+
+.song_timing {
+    height: 20px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.timebar {
+    height: 3px;
+    width: 80%;
+    background-color: khaki;
 }
 
 /* #endregion */
