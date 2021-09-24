@@ -83,8 +83,7 @@ body {
 header {
     background-color: #080B12;
     width: calc(100vw - 230px);
-    height: 8vh;
-    line-height: 8vh;
+    height: 65px;
     position: absolute;
     top: 0;
     left: 230px;
@@ -200,7 +199,9 @@ dl dd:first-of-type span {
     background-color: #141922;
     overflow-y: scroll;
     width: calc(100vw - 230px);
+    /* i need to figure this out */
     height: 84vh;
+    /*  */
     position: absolute;
     top: 8vh;
     left: 230px;
@@ -213,7 +214,7 @@ dl dd:first-of-type span {
 footer {
     background-color: #282828;
     width: 100vw;
-    height: 8vh;
+    height: 65px;
     position: absolute;
     left: 0;
     bottom: 0;
