@@ -118,6 +118,7 @@ aside {
     width: 230px;
     height: 92vh;
     justify-content: space-between;
+    padding: 1rem;
 }
 
 aside.flex, .spotify_commands {
@@ -125,16 +126,22 @@ aside.flex, .spotify_commands {
 }
 
 .spotify_commands {
-    justify-content: space-around;
-    height: 60%;
+    justify-content: space-between;
+    height: 50%;
+}
+
+.commands div {
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .cmd_img img {
-    width: 20%;
+    width: 25px;
 }
 
 .cmd_text {
     color: white;
+    line-height: 100%;
 }
 
 .logo {
@@ -143,6 +150,18 @@ aside.flex, .spotify_commands {
 
 .logo img {
     width: 100%;
+}
+
+dl dd {
+    padding: .3rem 0;
+}
+
+dl dd:first-of-type {
+    align-items: center;
+}
+
+dl dd:first-of-type span {
+    padding-left: .5rem;
 }
 
 /* #endregion */
