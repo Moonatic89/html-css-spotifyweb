@@ -39,17 +39,6 @@ body {
 
 /* #region Bars */
 
-.bar_back {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translate(0%, -50%);
-    background-color: #5A5A5A;
-    height: 3px;
-}
-
-.bar_front {}
-
 /* #endregion */
 
 /* #region Debug */
@@ -241,6 +230,10 @@ footer a.grey_btn {
     color: grey;
 }
 
+footer a.white_btn {
+    color: white;
+}
+
 .song_data, .song_cmd {
     align-self: center;
 }
@@ -275,7 +268,7 @@ footer a.grey_btn {
 }
 
 .manage_cmd>* {
-    padding: 0 1rem;
+    padding: 0 .5rem;
 }
 
 .band_img img {
@@ -336,7 +329,8 @@ footer a.grey_btn {
 }
 
 .visual_time {
-    font-size: .8rem;
+    font-size: .5rem;
+    font-weight: bold;
 }
 
 /* #endregion */
