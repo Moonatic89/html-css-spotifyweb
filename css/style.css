@@ -221,13 +221,40 @@ footer {
     padding: .75rem;
 }
 
+footer a.grey_btn {
+    color: grey;
+}
+
 .song_thumb {
-    width: 10%;
+    flex-grow: 1;
     justify-content: space-between;
+}
+
+.play_cmd {
+    flex-grow: 3;
+}
+
+.manage_cmd {
+    flex-grow: 1;
 }
 
 .band_img img {
     height: 100%;
+}
+
+.play_cmd {
+    flex-direction: column;
+}
+
+.play_btns {
+    width: 50%;
+    margin: auto;
+}
+
+.song_timing {
+    height: 20px;
+    width: 100%;
+    background-color: hotpink;
 }
 
 /* #endregion */
