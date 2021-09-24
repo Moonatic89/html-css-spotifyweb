@@ -164,6 +164,18 @@ dl dd:first-of-type span {
     padding-left: .5rem;
 }
 
+.user_zone {
+    font-size: .8rem;
+}
+
+.install img {
+    width: 13px;
+}
+
+.install {
+    border-bottom: 1px solid white;
+}
+
 /* #endregion */
 
 /* #region Artists */
