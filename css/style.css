@@ -237,6 +237,12 @@ footer a.grey_btn {
 
 .manage_cmd {
     flex-grow: 1;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.manage_cmd>* {
+    padding: 0 1rem;
 }
 
 .band_img img {
@@ -251,6 +257,7 @@ footer a.grey_btn {
     width: 50%;
     margin: auto;
     align-items: center;
+    justify-content: center;
 }
 
 .play_btns>* {
@@ -267,6 +274,12 @@ footer a.grey_btn {
     height: 20px;
     width: 100%;
     background-color: hotpink;
+}
+
+.volumebar {
+    background-color: khaki;
+    height: 2px;
+    width: 150px;
 }
 
 /* #endregion */
