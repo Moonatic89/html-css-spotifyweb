@@ -37,6 +37,21 @@ body {
 
 /* #endregion */
 
+/* #region Bars */
+
+.bar_back {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(0%, -50%);
+    background-color: #5A5A5A;
+    height: 3px;
+}
+
+.bar_front {}
+
+/* #endregion */
+
 /* #region Debug */
 
 .debug header {
@@ -115,7 +130,7 @@ aside {
     background-color: black;
     position: relative;
     width: 230px;
-    height: 92vh;
+    height: calc(100vh - 80px);
     justify-content: space-between;
     padding: 1rem;
 }
@@ -214,21 +229,39 @@ dl dd:first-of-type span {
 footer {
     background-color: #282828;
     width: 100vw;
-    height: 65px;
+    height: 80px;
     position: absolute;
     left: 0;
     bottom: 0;
     justify-content: space-between;
-    padding: .75rem;
+    padding: 1rem;
 }
 
 footer a.grey_btn {
     color: grey;
 }
 
+.song_data, .song_cmd {
+    align-self: center;
+}
+
 .song_thumb {
     flex-grow: 1;
     justify-content: space-between;
+}
+
+.song>*, .song_cmd>* {
+    padding: 0 .5rem
+}
+
+.band_name {
+    font-size: .8rem;
+    font-weight: bold;
+}
+
+.song_name {
+    font-size: .6rem;
+    color: grey;
 }
 
 .play_cmd {
@@ -270,23 +303,40 @@ footer a.grey_btn {
     padding: 0 1rem;
 }
 
-.volumebar {
-    background-color: khaki;
-    height: 2px;
-    width: 150px;
-}
-
 .song_timing {
     height: 20px;
     width: 100%;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+}
+
+.timebar, .volumebar {
+    height: 3px;
 }
 
 .timebar {
-    height: 3px;
     width: 80%;
-    background-color: khaki;
+}
+
+.volumebar {
+    width: 33%;
+}
+
+.tb_back {
+    width: 100%;
+    height: 100%;
+    background-color: #5A5A5A;
+}
+
+.tb_filling {
+    width: 9%;
+    height: 100%;
+    background-color: #c1c1c1;
+}
+
+.visual_time {
+    font-size: .8rem;
 }
 
 /* #endregion */
