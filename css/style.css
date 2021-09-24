@@ -250,6 +250,17 @@ footer a.grey_btn {
 .play_btns {
     width: 50%;
     margin: auto;
+    align-items: center;
+}
+
+.play_btns>* {
+    font-size: .8rem;
+    padding: 0 .5rem;
+}
+
+.play_btns>:nth-child(3) {
+    font-size: 1.5rem;
+    padding: 0 1rem;
 }
 
 .song_timing {
