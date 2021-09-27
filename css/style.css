@@ -216,7 +216,15 @@ ul>li {
     display: inline-block;
 }
 
-ul>li {}
+ul>li a {
+    color: gray;
+    text-decoration: none;
+    transition: color .5s;
+}
+
+ul>li a:hover {
+    color: white;
+}
 
 /* #endregion */
 
@@ -226,7 +234,7 @@ ul>li {}
     padding: 0 1.5rem;
 }
 
-.recent {
+.recent, .for_you, .popular {
     width: 100%;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -337,6 +345,7 @@ footer {
     bottom: 0;
     justify-content: space-between;
     padding: 1rem;
+    z-index: 10;
 }
 
 footer a.grey_btn {
