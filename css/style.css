@@ -101,6 +101,7 @@ header {
 
 .upgrade_btn {
     margin-right: 15px;
+    transition: transform, .5s;
 }
 
 .btn {
@@ -113,6 +114,10 @@ a.btn {
     text-decoration: none;
     color: white;
     font-size: .75rem;
+}
+
+.upgrade_btn:hover {
+    transform: scale(1.1);
 }
 
 /* #endregion */
