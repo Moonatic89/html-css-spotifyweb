@@ -37,6 +37,10 @@ body {
 
 /* #endregion */
 
+.pos_rel {
+    position: relative
+}
+
 /* #region Bars */
 
 /* #endregion */
@@ -224,6 +228,16 @@ ul>li a {
 
 ul>li a:hover {
     color: white;
+}
+
+.half_bar {
+    position: absolute;
+    width: 25%;
+    top: 100%;
+    left: 40%;
+    transform: (-50%, -50%);
+    height: 1px;
+    border-bottom: 1px solid yellow;
 }
 
 /* #endregion */
