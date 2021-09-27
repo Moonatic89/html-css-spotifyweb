@@ -21,6 +21,7 @@ body {
     max-width: 1440px;
     color: white;
     font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
 }
 
 /* #endregion */
@@ -147,21 +148,47 @@ aside.flex, .spotify_commands {
     align-items: center;
 }
 
+.commands {
+    padding: 1rem 0;
+}
+
 .cmd_img img {
     width: 25px;
 }
 
 .cmd_text {
-    color: white;
+    color: grey;
     line-height: 100%;
+    font-size: .8rem;
+    transition: color, .5s;
 }
 
 .logo {
-    width: 80%;
+    width: 60%;
 }
 
 .logo img {
     width: 100%;
+}
+
+.playlist_parent>dl>dt {
+    font-size: .9rem;
+}
+
+.playlist_parent {
+    overflow-y: auto;
+    height: auto;
+}
+
+.playlist_parent dd>a, .playlist_parent a {
+    color: grey;
+    text-decoration: none;
+    font-size: .7rem;
+    transition: color, .5s;
+}
+
+.playlist_parent dd>a:hover, .playlist_parent a:hover, .cmd_text:hover {
+    color: white;
 }
 
 dl dd {
@@ -178,6 +205,7 @@ dl dd:first-of-type span {
 
 .user_zone {
     font-size: .8rem;
+    overflow: hidden;
 }
 
 .install img {
@@ -505,6 +533,9 @@ footer a.white_btn {
     header, .artists {
         width: calc(100vw - 50px);
         left: 50px;
+    }
+    .playlist_parent, .commands span {
+        display: none;
     }
 }
 
