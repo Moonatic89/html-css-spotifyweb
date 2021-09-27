@@ -199,24 +199,69 @@ dl dd:first-of-type span {
 
 /* #region Artists */
 
+/* #region Nav */
+
+nav {
+    width: 100%;
+}
+
+ul {
+    text-align: center;
+}
+
+ul>li {
+    padding: 1rem .5rem;
+    font-size: .75rem;
+    list-style: none;
+    display: inline-block;
+}
+
+/* #endregion */
+
+/* #region Recently Played */
+
+.main_container {
+    padding: 0 1.5rem;
+}
+
+.recent {
+    width: 100%;
+    justify-content: space-around;
+    margin: 0 -1rem;
+}
+
+.recent_title, .for_youTitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1.5rem 0;
+}
+
 .artists {
     background-color: #141922;
     overflow-y: scroll;
     overflow-x: hidden;
     width: calc(100vw - 230px);
     /* i need to figure this out */
-    height: 84vh;
+    height: calc(100vh - 145px);
     /*  */
     position: absolute;
     top: 65px;
     left: 230px;
 }
 
+.track_body {
+    width: calc(100% / 6);
+    padding: 0 1rem;
+}
+
 .track_img {
-    width: 200px;
-    height: 200px;
+    width: 100%;
     background-color: crimson;
     margin-bottom: 1rem;
+}
+
+.track_img img {
+    width: 100%;
 }
 
 .track_text {
@@ -235,6 +280,8 @@ dl dd:first-of-type span {
 .track_text .subtitle {
     font-size: .8rem;
 }
+
+/* #endregion */
 
 /* #endregion */
 
@@ -357,10 +404,6 @@ footer a.white_btn {
     font-size: .5rem;
     font-weight: bold;
 }
-
-/* #endregion */
-
-/* #region Prefab */
 
 /* #endregion */
 
