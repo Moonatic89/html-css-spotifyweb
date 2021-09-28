@@ -33,36 +33,49 @@
 
             <aside class="flex">
 
-                <div class="spotify_commands flex">
+                <div class="spotify_command">
 
                     <div class="logo">
-                        <img src="./img/logo.svg" alt="Spotify Logo">
+                        <img class="show" src="./img/logo.svg" alt="Spotify
+                            Logo">
+                        <img class="hide" src="./img/logo-small.svg"
+                            alt="Spotify
+                            Logo">
                     </div>
 
                     <div class="commands">
 
-                        <div class="home_cmd flex">
+                        <a href="#">
+                            <div class="home_cmd flex">
 
-                            <item class="cmd_img"><img src="./img/home.svg"
-                                    alt="Home Button"></item>
-                            <span class="cmd_text">Home</span>
+                                <item class="cmd_img"><img src="./img/home.svg"
+                                        alt="Home Button"></item>
+                                <span class="cmd_text">Home</span>
 
-                        </div>
+                            </div>
+                        </a>
 
-                        <div class="search_cmd flex">
+                        <a href="">
+                            <div class="search_cmd flex">
 
-                            <item class="cmd_img"><img src="./img/search.svg"
-                                    alt="Search Button"></item>
-                            <span class="cmd_text">Cerca</span>
-                        </div>
+                                <item class="cmd_img"><img
+                                        src="./img/search.svg"
+                                        alt="Search Button"></item>
+                                <span class="cmd_text">Cerca</span>
 
-                        <div class="library_cmd flex">
+                            </div>
+                        </a>
 
-                            <item class="cmd_img"><img src="./img/libreria.svg"
-                                    alt="Library
-                                    Button"></item>
-                            <span class="cmd_text">La tua libreria</span>
-                        </div>
+                        <a href="">
+                            <div class="library_cmd flex">
+
+                                <item class="cmd_img"><img
+                                        src="./img/libreria.svg"
+                                        alt="Library
+                                        Button"></item>
+                                <span class="cmd_text">La tua libreria</span>
+                            </div>
+                        </a>
 
                     </div>
 
@@ -70,22 +83,26 @@
                         <dl>
                             <dt>PLAYLIST</dt>
 
-                            <dd class="flex">
-                                <i class="fas fa-plus-square
-                                    fa-2x"></i>
-                                <span>
-                                    Crea Playlist
-                                </span></dd>
-                            <dd>Nome Playlist</dd>
-                            <dd>Nome Playlist</dd>
-                            <dd>Nome Playlist</dd>
-                            <dd>Nome Playlist</dd>
-                            <dd>Nome Playlist</dd>
-                            <dd>Nome Playlist</dd>
+                            <a href="">
+                                <dd class="flex">
+                                    <i class="fas fa-plus-square
+                                        fa-3x"></i>
+                                    <span>
+                                        Crea Playlist
+                                    </span></dd>
+                            </a>
+
+                            <dd><a href="">Nome Playlist</a></dd>
+                            <dd><a href="">Nome Playlist</a></dd>
+                            <dd><a href="">Nome Playlist</a></dd>
+                            <dd><a href="">Nome Playlist</a></dd>
+                            <dd><a href="">Nome Playlist</a></dd>
+                            <dd><a href="">Nome Playlist</a></dd>
                         </dl>
                     </div>
 
                 </div>
+
                 <div class="user_zone">
 
                     <div class="install flex">
@@ -394,7 +411,7 @@
                                 Sinister
                             </div>
                             <div class="song_name">
-                                Brano Nome
+                                <a href="">Brano Nome</a>
                             </div>
                         </div>
 
@@ -419,7 +436,7 @@
                         <a class="white_btn" href="#">
                             <i class="fas fa-step-backward"></i>
                         </a>
-                        <a class="white_btn" href="#">
+                        <a class="white_btn"href="#">
                             <i class="far fa-play-circle"></i>
                         </a>
                         <a class="white_btn" href="#">
@@ -442,7 +459,9 @@
                         <div class="timebar">
                             <div class="tb_back">
                                 <div class="tb_filling">
+                                    <div class="handle">
 
+                                    </div>
                                 </div>
                             </div>
                         </div>
